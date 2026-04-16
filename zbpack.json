@@ -1,0 +1,5 @@
+{
+  "node_version": "22",
+  "build_command": "npm install --no-audit --no-fund && npm run build",
+  "start_command": "npm run start"
+}

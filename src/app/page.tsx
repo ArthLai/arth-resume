@@ -3,71 +3,105 @@ import { Section, SectionTitle } from "@/components/Section";
 const capabilities = [
   {
     title: "行銷策略與資源分配",
-    body: "為多產品線建構評估框架。依毛利、市場規模、產品成熟度、可行性重新分配預算與團隊資源——讓投入流向真正能回收的地方。",
+    body: "能於多產品線中，依毛利、市場規模、產品成熟度、可行性重新分配預算與團隊資源，讓投入流向真正有機會回收的地方。",
   },
   {
     title: "行銷自動化與漏斗工程",
-    body: "設計端到端自動化系統，涵蓋業務交接、顧客旅程、追蹤架構。工具棧:n8n / Zapier / GA4 / GTM / Looker Studio / Clarity，必要時用 Next.js 補上 SaaS 工具做不到的部分。",
+    body: "設計端到端自動化系統，涵蓋業務交接、顧客旅程、追蹤架構，使用工具包含 n8n / GA4 / GTM / Looker Studio / Clarity。",
   },
   {
-    title: "跨職能營運與專案移轉",
-    body: "領導高難度營運專案——含平台關閉、用戶移轉、跨組織轉型——透過拆解產品、技術、利害關係人邏輯來推動完成。",
+    title: "跨職能專案營運",
+    body: "領導高難度營運專案，含平台關閉、用戶移轉、跨組織轉型，透過拆解產品、技術、利害關係人邏輯來推動完成。",
   },
   {
     title: "職涯諮詢與人才洞察",
-    body: "持續為早期職涯與轉職者提供諮詢。這份工作磨練我對「什麼樣的人才會被招募、留任、成長」的判讀能力。",
+    body: "協助工作者釐清現況卡點，透過局面、利害關係人、目標分析，提供個案判斷及設定突破行動策略的能力。",
   },
 ];
 
 const projects = [
   {
     number: "01",
-    title: "商業思維學院關站與用戶移轉",
-    desc: "主導某教育平台端到端關站。負責產品業務邏輯拆解、技術路線評估、移轉流程的 UX 重新設計、營運驅動的用戶移轉策略。",
-    tags: ["營運", "跨職能領導", "UX"],
+    title: "商業思維學院平台關站與用戶移轉",
+    desc: "主導線上教育平台端到端關站專案——釐清產品業務與技術邏輯、評估 User Flow 及 UIUX、設定營運驅動策略，3 個月內達成近 60% 用戶移轉。",
+    tags: ["營運", "跨職能領導", "UX", "用戶移轉"],
   },
   {
     number: "02",
-    title: "多產品線資源分配框架",
-    desc: "設計評估框架，依據毛利、市場規模、產品成熟度、可行性重新排序多條產品線——把策略翻譯成具體的預算與執行調整。",
+    title: "多產品線行銷資源分配框架",
+    desc: "於電商與服務多產品線環境中，依毛利、市場規模、產品成熟度、可行性設計評估框架，將策略轉化為具體的預算與執行資源調配。",
     tags: ["行銷策略", "資源分配", "決策框架"],
   },
   {
     number: "03",
-    title: "端到端行銷自動化系統",
-    desc: "設計並建置橫跨三層的自動化系統：業務交接、顧客旅程編排、事件追蹤。把手動流程取代成可隨規模成長而不需等比擴編的系統。",
+    title: "端到端行銷自動化與追蹤系統",
+    desc: "透過 n8n、Google Apps Script、API 串接，建置橫跨銷售交接、顧客旅程、事件追蹤的自動化系統，減少人工作業、提升數據準確度與營運效率。",
     tags: ["自動化", "漏斗工程", "追蹤架構"],
   },
 ];
 
 const experiences = [
   {
-    company: "[公司名稱 TBD]",
-    title: "[職稱 TBD]",
-    period: "[時間 TBD]",
-    teamSize: "[團隊規模 TBD]",
-    context: "[公司階段、產品、進去時的狀況 — 待補]",
+    company: "職游 創新職涯發展與諮詢",
+    title: "Marketing Specialist",
+    period: "2024.07 – 2026.03",
+    teamSize: "自由職業 · 遠距",
+    context:
+      "新創型職涯顧問公司，負責橫跨電商、行銷、數據分析、CRM 與自動化的成長營運。",
     owned: [
-      "多產品線資源分配與行銷策略制定（依毛利 / 市場 / 成熟度 / 可行性框架）",
-      "全漏斗行銷自動化系統設計與導入（獲客 → 啟用 → 留存）",
-      "跨團隊重大變動專案領導（含商業思維學院關站移轉）",
-      "[其他職責待補]",
+      "多產品線資源分配與行銷策略制定，依毛利、市場規模、成熟度、可行性框架進行資源調配",
+      "以 GA4、GTM、Google Sheets 及 Dashboard 建置全漏斗追蹤系統，監控關鍵轉換指標，支援快速決策",
+      "透過 n8n、Google Apps Script、API 串接開發自動化工作流，減少人工作業、提升數據準確度與營運效率",
+      "跨電商、服務、內容等產品線的行銷執行與成效優化",
     ],
-    highlights: ["[量化成果 1 — 待補]", "[量化成果 2 — 待補]"],
+    highlights: [
+      "建立多產品線資源分配框架，系統化調配行銷預算與團隊資源",
+      "完成端到端自動化系統建置，取代多項手動流程",
+    ],
     stack: [
-      "GA4", "GTM", "n8n", "Zapier", "Looker Studio", "Clarity",
-      "Next.js", "TypeScript", "Prisma", "PostgreSQL",
+      "GA4", "GTM", "n8n", "Google Apps Script", "Looker Studio",
+      "Clarity", "Next.js", "TypeScript", "Prisma", "PostgreSQL",
     ],
   },
   {
-    company: "[上一份公司 TBD]",
-    title: "[職稱 TBD]",
-    period: "[時間 TBD]",
-    teamSize: "[團隊規模 TBD]",
-    context: "[待補]",
-    owned: ["[待補]"],
-    highlights: ["[待補]"],
-    stack: ["[待補]"],
+    company: "商業思維學院",
+    title: "Marketing Operations Specialist",
+    period: "2023.09 – 2024.07",
+    teamSize: "正職 · 遠距",
+    context:
+      "線上商業教育平台，服務數萬名會員的訂閱制學習社群。",
+    owned: [
+      "主導平台關站與用戶移轉專案，跨團隊協調新系統需求與移轉計畫，3 個月內達成近 60% 用戶移轉",
+      "負責線上課程行銷活動，涵蓋受眾鎖定、渠道規劃、內容排程",
+      "行銷數據追蹤與 CRM 管理",
+    ],
+    highlights: [
+      "單場活動達成 1,200 報名、800 人次即時參與、10% 轉換率",
+      "3 個月內完成近 60% 用戶從舊平台至新平台的移轉",
+    ],
+    stack: [
+      "CRM", "行銷自動化", "GA4", "GTM", "內容行銷",
+    ],
+  },
+  {
+    company: "百瀚智能教育",
+    title: "Marketing Content Specialist",
+    period: "2023.01 – 2023.09",
+    teamSize: "全職 · 混合型",
+    context:
+      "智能教育公司，擁有全台 27 間線下門市，推動線上線下整合行銷。",
+    owned: [
+      "制定 SEO 策略與內容產出，提升網站自然流量",
+      "設計 Chatbot 系統結合訊息行銷，規劃 OMO 再行銷策略，並自動化追蹤全台 27 間門市的顧客行為數據",
+      "負責 Yourator 線下招募活動專案",
+    ],
+    highlights: [
+      "網站日均流量從 100 提升至 6,000（成長 60 倍）",
+      "Yourator 招募活動求職者投遞數較前屆成長 2.5 倍",
+    ],
+    stack: [
+      "SEO", "Google Analytics", "Chatbot", "訊息行銷", "OMO",
+    ],
   },
 ];
 
@@ -78,12 +112,12 @@ const skillClusters = [
       "策略與定位", "資源分配框架", "Performance Marketing",
       "Lifecycle & CRM", "SEO 與內容", "行銷分析", "A/B 測試", "漏斗優化",
     ],
-    validatedBy: ["專案 1", "專案 2"],
+    validatedBy: ["職游", "商業思維學院"],
   },
   {
     name: "營運 Operations",
     skills: ["跨職能領導", "專案移轉", "流程設計", "利害關係人管理", "危機營運"],
-    validatedBy: ["專案 1"],
+    validatedBy: ["商業思維學院關站移轉"],
   },
   {
     name: "技術與自動化 Tech & Automation",
@@ -92,7 +126,7 @@ const skillClusters = [
       "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ",
       "OpenAI / Claude APIs", "RAG",
     ],
-    validatedBy: ["專案 2", "專案 3"],
+    validatedBy: ["職游自動化系統", "全漏斗追蹤建置"],
   },
   {
     name: "人才與諮詢 People & Coaching",
@@ -176,7 +210,7 @@ export default function Home() {
       {/* ── Capabilities ── */}
       <Section className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide">
-          <SectionTitle eyebrow="What I Do Best" title="我擅長什麼" description="不只做行銷，做的是把行銷變成可被工程化的系統。" />
+          <SectionTitle eyebrow="What I Do Best" title="我擅長什麼" description="集合行銷 x 產品 x 服務設計思維，並透過 AI 驅動，將行銷變成可被自動化的系統。" />
           <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
             {capabilities.map((cap) => (
               <div key={cap.title}>
@@ -243,7 +277,7 @@ export default function Home() {
               <header className="mb-6">
                 <h3 className="font-serif text-2xl text-[color:var(--color-fg)] mb-2">職涯諮詢（並行）</h3>
                 <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-[color:var(--color-muted)]">
-                  <span>諮詢師 / 講師</span><span>·</span><span>[時間 TBD] – 至今</span>
+                  <span>諮詢師 / 講師</span><span>·</span><span>2024 – 至今</span>
                 </div>
               </header>
               <div className="space-y-6">
@@ -268,10 +302,6 @@ export default function Home() {
                       <span className="absolute left-0 top-3 w-2 h-px bg-[color:var(--color-accent)]" />
                       國立台中科技大學職涯講座（2026.04，主題：從校園到職場 — 大學生一定要知道的職涯真相）
                     </li>
-                    <li className="text-[color:var(--color-fg)] leading-relaxed pl-5 relative">
-                      <span className="absolute left-0 top-3 w-2 h-px bg-[color:var(--color-accent)]" />
-                      [其他講座或代表性 1:1 案例 — 待補]
-                    </li>
                   </ul>
                 </div>
                 <div>
@@ -287,7 +317,7 @@ export default function Home() {
       {/* ── Projects ── */}
       <Section id="projects" className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide">
-          <SectionTitle eyebrow="Projects" title="精選專案" description="三個深度案例，呈現我會接下什麼樣的工作。" />
+          <SectionTitle eyebrow="Projects" title="精選專案" description="三個代表性專案，呈現我會接下什麼樣的工作。" />
           <div className="space-y-px bg-[color:var(--color-subtle)]">
             {projects.map((p) => (
               <div key={p.number} className="bg-[color:var(--color-bg)] py-10 -mx-6 px-6">

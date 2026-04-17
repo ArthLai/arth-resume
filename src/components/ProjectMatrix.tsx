@@ -4,33 +4,34 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const dimensions = [
-  { label: "毛利", en: "Margin" },
+  { label: "淨利", en: "Net Profit" },
   { label: "市場規模", en: "Market Size" },
   { label: "成熟度", en: "Maturity" },
   { label: "可行性", en: "Feasibility" },
+  { label: "實際轉換率", en: "Actual CVR" },
 ];
 
 const modes = [
   {
     label: "Investment",
-    cn: "攻、加碼",
-    condition: "高市場 + 低成熟",
+    cn: "擴張投入",
+    condition: "市場規模大 · 成熟度低",
     color: "var(--color-accent)",
-    desc: "加碼資源，搶佔市場先機",
+    desc: "集中資源佈局，建立市場地位。",
   },
   {
     label: "Optimization",
-    cn: "守、提效",
-    condition: "高毛利 + 高成熟",
+    cn: "效率優化",
+    condition: "淨利穩定 · 轉換率良好",
     color: "#34D399",
-    desc: "維持現有效率，最大化回報",
+    desc: "維持既有效能，最大化投資回報。",
   },
   {
     label: "Sunset",
-    cn: "撤、停損",
-    condition: "低毛利 + 低市場",
+    cn: "逐步退場",
+    condition: "淨利低 · 轉換率差",
     color: "#F87171",
-    desc: "逐步退出，釋放資源",
+    desc: "逐步退出，釋放資源給其他產品線。",
   },
 ];
 

@@ -5,19 +5,37 @@ import { useRef } from "react";
 
 const streams = [
   {
-    title: "業務交接",
-    en: "Sales Handoff",
-    nodes: ["潛客捕捉", "評分篩選", "路由分配", "通知觸發", "CRM 同步"],
+    title: "業務開發",
+    en: "Business Development",
+    nodes: [
+      "潛客名單填入",
+      "資料自動補齊",
+      "多版本報價單生成",
+      "進度 / 回覆提醒",
+      "CRM 狀態同步",
+    ],
   },
   {
-    title: "顧客旅程",
-    en: "Customer Journey",
-    nodes: ["事件觸發", "行為分群", "個人化內容", "多渠道投遞", "成效衡量"],
+    title: "課程營運行政",
+    en: "Course Ops & Admin",
+    nodes: [
+      "學員名單同步",
+      "分期 / 分班規劃",
+      "課前課後通知寄發",
+      "證書 / 結業文件生成",
+      "回饋收集回 Dashboard",
+    ],
   },
   {
-    title: "追蹤歸因",
-    en: "Tracking & Attribution",
-    nodes: ["Schema 設計", "埋碼實作", "數據驗證", "跨平台整合", "報表產出"],
+    title: "行銷銷售追蹤",
+    en: "Marketing & Sales Tracking",
+    nodes: [
+      "事件 Schema 設計",
+      "跨系統埋碼實作",
+      "數據驗證與清洗",
+      "多平台歸因整合",
+      "Dashboard 即時呈現",
+    ],
   },
 ];
 
@@ -192,7 +210,7 @@ export function ProjectFlows() {
           <motion.div
             key={stream.en}
             className="border-l-2 border-[color:var(--color-accent)] pl-4"
-            style={{ borderColor: "rgba(96, 165, 250, 0.5)" }}
+            style={{ borderColor: "rgba(var(--accent-rgb), 0.5)" }}
             initial={{ opacity: 0, x: -8 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

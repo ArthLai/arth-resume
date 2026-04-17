@@ -13,33 +13,34 @@ import { ProjectCard, type ProjectData } from "@/components/ProjectCard";
 const experiences: ExperienceData[] = [
   {
     slug: "zhiyou",
-    company: "職游 創新職涯發展與諮詢",
-    initials: "職游",
+    company: "Zhi You · Career Development & Consulting",
+    initials: "ZY",
     title: "Marketing Specialist",
     period: "2024.07 – 2026.03",
-    mode: "自由接案 · 遠距",
+    mode: "Freelance · Remote",
     headline:
-      "B2C × B2B 並行的顧問公司中，負責從策略到自動化的全鏈路行銷營運，推動主力產品漏斗轉換提升。",
+      "Led end-to-end marketing ops across a B2C × B2B consultancy—from strategy to automation—lifting the core product funnel conversion.",
     context:
-      "新創型職涯顧問公司，B2C 提供高單價直播培訓課 / 線上預錄課 / 1:1 深度諮詢等服務，B2B 提供企業內訓與顧問服務。",
+      "Career consulting startup. B2C: high-ticket live training, recorded courses, 1:1 deep consulting. B2B: corporate training and advisory.",
     owned: [
-      "多產品線行銷策略與資源分配",
-      "用戶訪談、TA 洞察與訊息優化（LLM 輔助逐字稿結構化 + 關鍵詞萃取）",
-      "全漏斗追蹤（GA4 / GTM / Dashboard）",
-      "自動化工作流（n8n / Apps Script / API）",
-      "官網營運與優化",
+      "Multi-product-line marketing strategy & resource allocation",
+      "User interviews, ICP insights & messaging optimization (LLM-assisted transcript structuring + keyword extraction)",
+      "Full-funnel tracking (GA4 / GTM / Dashboard)",
+      "Automation workflows (n8n / Apps Script / API)",
+      "Website operations & optimization",
     ],
     metrics: [
       {
-        value: "10-15%",
-        action: "改造入口型產品 × 說明會漏斗",
+        value: "10–15%",
+        action: "Redesigned entry product × webinar funnel",
         label:
-          "新增單日直播課作為入口型產品，讓主力培訓班轉換率提升 10-15% 不等。",
+          "Launched a single-day live course as a top-of-funnel product, lifting the flagship training program conversion by 10–15%.",
       },
       {
-        value: "2-3 hr / 日",
-        action: "n8n × Apps Script 重寫營運 ops",
-        label: "取代人工報表、CRM 同步、跨平台追蹤等重複作業。",
+        value: "2–3 hr / day",
+        action: "Rebuilt ops with n8n × Apps Script",
+        label:
+          "Automated manual reporting, CRM sync, and cross-platform tracking work.",
       },
     ],
     stack: ["GA4", "GTM", "n8n", "Apps Script", "Looker Studio", "Clarity"],
@@ -47,40 +48,41 @@ const experiences: ExperienceData[] = [
   },
   {
     slug: "bizthinking",
-    company: "商業思維學院",
-    initials: "商思",
+    company: "Business Thinking Institute",
+    initials: "BTI",
     title: "Project Manager / Marketing Operations Specialist",
     period: "2023.09 – 2024.07",
-    mode: "正職 · 遠距",
+    mode: "Full-time · Remote",
     headline:
-      "跨 PM / 行銷 / 營運三肩，平台轉移 × 訂閱制學院營運 × 高單價課程銷售同時推進。",
+      "Triple-hatted PM / marketing / ops—drove platform migration, subscription-based academy operations, and premium course sales in parallel.",
     context:
-      "線上商業教育平台，B2C 提供產品、商業、管理等主題的訂閱制學習平台，並於 B2B 端提供企業內訓與顧問服務。",
+      "Online business education platform. B2C: subscription-based learning on product, business, and management. B2B: corporate training and advisory.",
     owned: [
-      "PM｜平台關站與用戶移轉專案（技術 × 營運邏輯釐清 → 新平台上線 → 移轉營運）",
-      "MKT｜主力課程檔期銷售（廣告策略 × 內容行銷 × 銷售組合設計）",
-      "OP｜產品經理學習營主理，設計完課率與滿意度機制",
+      "PM | Platform sunset & user migration project (tech × ops logic → new platform launch → migration ops)",
+      "MKT | Flagship course cycle sales (ad strategy × content × sales-mix design)",
+      "OP | Product Manager bootcamp lead—designed completion & satisfaction mechanisms",
     ],
     metrics: [
       {
         value: "60%",
-        action: "跨技術 × 營運的分批移轉",
-        label: "舊平台 → 新平台用戶移轉率，3 個月內達成。",
+        action: "Cross-tech × ops phased migration",
+        label: "User migration rate from old to new platform within 3 months.",
       },
       {
-        value: "1,200 人",
-        action: "TA 痛點 × 內容行銷設計",
-        label: "銷售型說明會單場報名數，達歷史最高。",
+        value: "1,200",
+        action: "ICP pain-point × content-led campaign",
+        label: "All-time-high single-session webinar registrations.",
       },
       {
         value: "10%",
-        action: "早鳥 / 團報策略穩轉換",
-        label: "說明會 → 付費課程轉換率。",
+        action: "Early-bird / group deal conversion play",
+        label: "Webinar → paid course conversion rate.",
       },
       {
         value: "60% / 90%",
-        action: "產品經理學習營整體主理",
-        label: "完課率 / 滿意度——驗證課程引導設計與體驗品質。",
+        action: "End-to-end bootcamp ownership",
+        label:
+          "Completion / satisfaction—validating curriculum design and experience quality.",
       },
     ],
     stack: ["Mixpanel", "Trello", "GA4", "GTM", "Figma"],
@@ -88,167 +90,183 @@ const experiences: ExperienceData[] = [
   },
   {
     slug: "bohan",
-    company: "百瀚智能教育",
-    initials: "百瀚",
+    company: "Bohan Smart Education",
+    initials: "BH",
     title: "Marketing Specialist & Project Manager",
     period: "2023.01 – 2023.09",
-    mode: "全職 · 混合型",
+    mode: "Full-time · Hybrid",
     headline:
-      "K12 × 27 間線下門市：以 SEO 內容系統 + OMO 追蹤自動化，同時拉流量與跨部門效率。",
+      "K-12 × 27 offline centers: drove 60x traffic growth via SEO + OMO tracking automation, plus cross-department digital transformation.",
     context:
-      "K12 科技教育公司，擁有全台 27 間線下門市，提供跨英、數、中文教育服務。",
+      "K-12 tech-education company with 27 offline centers across Taiwan, offering English / math / Chinese learning services.",
     owned: [
-      "SEO 策略與內容產出",
-      "OMO 再行銷 × Chatbot 追蹤架構",
-      "跨部門數位轉型專案推動",
-      "Yourator 線下招募活動（彈性專案）",
+      "SEO strategy & content production",
+      "OMO remarketing × Chatbot tracking architecture",
+      "Cross-department digital transformation lead",
+      "Yourator offline hiring campaign (flex project)",
     ],
     metrics: [
       {
         value: "60x",
-        action: "SEO 架構 × 長尾內容規模化",
-        label: "官網日均流量從 100 → 6,000。",
+        action: "SEO architecture × long-tail content at scale",
+        label: "Website daily traffic grew from 100 → 6,000.",
       },
       {
         value: "2.5x",
-        action: "Yourator 線下招募活動策劃",
-        label: "年對年招募活動投遞數成長。",
+        action: "Yourator offline hiring campaign",
+        label: "YoY growth in campaign applications.",
       },
       {
-        value: "27 門市",
-        action: "串接 Chatbot × Email × CRM",
-        label: "全台門市顧客行為統一追蹤。",
+        value: "27 centers",
+        action: "Connected Chatbot × Email × CRM",
+        label: "Unified customer behavior tracking across all centers.",
       },
     ],
     stack: ["SEO", "Google Analytics", "Chatbot", "Apps Script"],
     logoColor: "#047857",
-  },
-
-
-];
-
-const projects: ProjectData[] = [
-  {
-    number: "01",
-    title: "訂閱制學習平台關站與用戶移轉",
-    role: "PM × 跨職能領導",
-    period: "商業思維學院 · 2024 Q1–Q2",
-    desc: "訂閱制學習平台要停止營運，同時盡可能減少爭議、退費成本，並在符合規格情況下，將服務搬到新系統。",
-    tags: ["SaaS 系統專案", "UIUX", "QA", "營運"],
-    metrics: [
-      { value: "60%", label: "3 個月內移轉達成率" },
-      { value: "低於 1%", label: "退費率" },
-    ],
-    challenge:
-      "平台要停止營運但服務不能斷。技術、營運、客服三方各有限制，且有過往的營運債需要償還，如何在有限期限內，在不影響用戶權益及觸發大量退費下，將技術、產品規格轉換成符合新平台需求狀態下，盡可能推動用戶完成移轉。",
-    approach: [
-      "釐清舊系統功能與新平台對應，識別 60+ 個功能斷點",
-      "依用戶狀態設計分群分批推動移轉營運策略（購買金額、上線狀況、社群互動率等）",
-      "以營運事件觸發用戶主動遷移（非強制），同時前置客服 FAQ 與退款政策",
-      "每週監控移轉率與流失信號，動態調整節奏",
-    ],
-    stack: ["Mixpanel", "Figma", "Trello", "CRM"],
-    vizLabel: "完整 4 階段流程",
-  },
-  {
-    number: "02",
-    title: "多產品線行銷資源分配框架",
-    role: "行銷策略 × 決策系統",
-    period: "職游 · 2024–2025",
-    desc: "多產品線環境下，把預算從「主管直覺」變成「數字 + 邏輯」。",
-    tags: ["行銷策略", "資源分配", "決策框架"],
-    metrics: [
-      { value: "5 維度", label: "評估指標" },
-      { value: "3 模式", label: "Invest / Optimize / Sunset" },
-    ],
-    challenge:
-      "5+ 個產品線同時競爭有限行銷資源，過去品牌主要靠直覺分配，導致結果跟成效對不起來。缺一個以利潤為基礎的決策框架。",
-    approach: [
-      "以淨利 × 市場規模 × 成熟度 × 可行性 × 實際轉換率 5 維度評估每條產品線",
-      "對應 3 種資源處理模式：Investment（擴張投入）、Optimization（效率優化）、Sunset（逐步退場）",
-      "框架輸出即是下一季的預算與資源分配表，每次會議都從同一張圖開始對齊",
-      "實際應用於季度預算決策，把產品線取捨從主觀討論轉為可驗證的框架對話",
-    ],
-    stack: ["Notion", "Looker Studio", "策略框架設計"],
-    vizLabel: "評估維度 × 決策模式",
-  },
-  {
-    number: "03",
-    title: "行銷營運自動化 × 追蹤 Dashboard",
-    role: "Marketing Ops × 自動化工程",
-    period: "職游 · 2024–2025",
-    desc: "把業務開發、課程營運行政、行銷銷售追蹤三條流整合成單一 self-update Dashboard。",
-    tags: ["自動化", "漏斗工程", "追蹤架構"],
-    metrics: [
-      { value: "2-3 hr / 日", label: "取代的人工對齊時間" },
-      { value: "3 streams", label: "跨平台事件流整合" },
-    ],
-    challenge:
-      "每週人工彙整跨系統報表與行政業務處理 → 數據延遲、漏看關鍵信號，耗費大量人力。業務開發、營運行政、行銷追蹤分散在 3 個系統，沒人能即時看到整體狀態。",
-    approach: [
-      "用 n8n 串起事件觸發、條件分流、跨系統寫入",
-      "Apps Script 處理 Google Sheets / GA4 / CRM 的批次同步",
-      "三條 stream 最後匯流到同一個 Looker Dashboard，每個節點可即時查看",
-      "行政事項依據固定規格自動執行，減少人為疏失",
-    ],
-    stack: ["n8n", "Apps Script", "GA4", "GTM", "Looker Studio", "API"],
-    vizLabel: "三流匯流 Dashboard",
   },
 ];
 
 const leadershipSignals = [
   {
     slug: "ncut",
-    name: "國立臺中科技大學",
-    initials: "中科大",
+    name: "National Taichung University of Science and Technology",
+    initials: "NTCUST",
     color: "#B45309",
-    title: "職涯講座｜從校園到職場",
+    title: "Career Lecture | From Campus to Workplace",
     period: "2026.04",
     headline:
-      "為大三大四學生設計從校園過渡到職場的實務框架，拆解職涯決策順序、對上溝通、能力累積優先序。",
-    demonstrates: "知識系統化 × 對群體說話的結構能力",
+      "A practical framework for juniors and seniors bridging campus to workplace—career decision order, managing upward, skill-accumulation priority.",
+    demonstrates: "Knowledge systematization × structured public speaking",
   },
   {
     slug: "coaching",
-    name: "1:1 職涯諮詢",
+    name: "1:1 Career Coaching",
     initials: "1:1",
     color: "#6366F1",
-    title: "1:1 深度職涯諮詢",
-    period: "2024 – 至今",
+    title: "1:1 Deep Career Coaching",
+    period: "2024 – Present",
     headline:
-      "為早期職涯與轉職者提供深度諮詢，以局面 × 利害關係人 × 目標三層分析協助做職涯決策。",
-    demonstrates: "個案診斷 × 長期 mentorship",
+      "Deep consulting for early-career and career-transition clients—analyzing through situation × stakeholders × goals to support career decisions.",
+    demonstrates: "Case diagnosis × long-term mentorship",
   },
   {
     slug: "facilitation",
-    name: "跨部門協作引導",
+    name: "Cross-functional Facilitation",
     initials: "X-Func",
     color: "#0891B2",
-    title: "跨部門議題釐清與協作引導",
-    period: "2024 – 至今",
+    title: "Cross-department Issue Clarification & Facilitation",
+    period: "2024 – Present",
     headline:
-      "協助多個組織進行跨部門議題釐清，以利害關係人分析與組織結構圖設計對齊機制、推動共識形成。",
-    demonstrates: "利害關係人管理 × 共識推動",
+      "Helped multiple organizations clarify cross-department issues—using stakeholder analysis and org-structure mapping to design alignment mechanisms and drive consensus.",
+    demonstrates: "Stakeholder management × consensus building",
+  },
+];
+
+const projects: ProjectData[] = [
+  {
+    number: "01",
+    title: "Subscription Platform Sunset & User Migration",
+    role: "PM × Cross-functional Lead",
+    period: "Business Thinking Institute · 2024 Q1–Q2",
+    desc: "A subscription-based learning platform had to shut down while moving its service to a new system with minimal refund exposure.",
+    tags: ["SaaS Migration", "UIUX", "QA", "Operations"],
+    metrics: [
+      { value: "60%", label: "Migration within 3 months" },
+      { value: "<1%", label: "Refund rate" },
+    ],
+    challenge:
+      "The platform had to stop operating without breaking service. Tech, ops, and customer support each had constraints, and legacy operational debt needed to be resolved. The goal: convert the tech/product spec to fit the new platform within a fixed timeline—without triggering mass refunds or hurting user rights.",
+    approach: [
+      "Mapped legacy features to the new platform, identifying 60+ functional gaps",
+      "Designed phased migration by user segment (purchase amount, usage stage, community engagement)",
+      "Triggered voluntary migration via operational events (non-forced) with pre-empted FAQ & refund policy",
+      "Weekly monitoring of migration rate and churn signals, adjusting pace dynamically",
+    ],
+    stack: ["Mixpanel", "Figma", "Trello", "CRM"],
+    vizLabel: "4-Phase Migration Timeline",
+  },
+  {
+    number: "02",
+    title: "Multi-Product Marketing Resource Allocation Framework",
+    role: "Marketing Strategy × Decision System",
+    period: "Zhi You · 2024–2025",
+    desc: "Turned marketing budget decisions from manager intuition into number + logic in a multi-product environment.",
+    tags: ["Strategy", "Resource Allocation", "Decision Framework"],
+    metrics: [
+      { value: "5 Dimensions", label: "Evaluation metrics" },
+      { value: "3 Modes", label: "Invest / Optimize / Sunset" },
+    ],
+    challenge:
+      "5+ product lines competed for limited marketing resources. Past allocation relied on manager intuition, with outcomes that didn't match effort. A profit-based decision framework was missing.",
+    approach: [
+      "5-dimension evaluation per product line: Net Profit × Market Size × Maturity × Feasibility × Actual CVR",
+      "Mapped to 3 resource-handling modes: Investment (expand), Optimization (efficiency), Sunset (phase out)",
+      "Framework output became the next quarter's budget & resource table—every meeting started from the same map",
+      "Applied in quarterly budget decisions, shifting product trade-offs from subjective discussion to verifiable framework conversations",
+    ],
+    stack: ["Notion", "Looker Studio", "Strategy Framework Design"],
+    vizLabel: "Dimensions × Decision Modes",
+  },
+  {
+    number: "03",
+    title: "End-to-End Marketing Ops Automation × Tracking Dashboard",
+    role: "Marketing Ops × Automation Engineering",
+    period: "Zhi You · 2024–2025",
+    desc: "Integrated business development, course ops, and marketing/sales tracking into a single self-update dashboard.",
+    tags: ["Automation", "Funnel Engineering", "Tracking Architecture"],
+    metrics: [
+      { value: "2–3 hr / day", label: "Manual alignment time saved" },
+      { value: "3 streams", label: "Cross-platform event-stream integration" },
+    ],
+    challenge:
+      "Weekly manual reporting and admin work caused data delays and missed signals. Business development, ops, and tracking sat in 3 separate systems—no one could see the whole state in real time.",
+    approach: [
+      "Used n8n to chain event triggers, conditional routing, cross-system writes",
+      "Apps Script handled batch sync across Google Sheets / GA4 / CRM",
+      "Three streams converged into one Looker dashboard with real-time visibility at every node",
+      "Admin tasks auto-executed via fixed rules, reducing human error",
+    ],
+    stack: ["n8n", "Apps Script", "GA4", "GTM", "Looker Studio", "API"],
+    vizLabel: "Three-Stream Convergence Dashboard",
   },
 ];
 
 const skills = {
   marketing: [
-    "策略與定位", "資源分配框架", "Performance Marketing",
-    "Lifecycle & CRM", "SEO 與內容", "行銷分析", "A/B 測試", "漏斗優化",
+    "Strategy & Positioning",
+    "Resource Allocation",
+    "Performance Marketing",
+    "Lifecycle & CRM",
+    "SEO & Content",
+    "Marketing Analytics",
+    "A/B Testing",
+    "Funnel Optimization",
   ],
   operations: [
-    "跨職能領導", "專案移轉", "流程設計", "利害關係人管理",
+    "Cross-functional Leadership",
+    "Project Migration",
+    "Process Design",
+    "Stakeholder Management",
   ],
   tools: [
-    "n8n", "GA4", "GTM", "Looker Studio", "Clarity", "Zapier", "Google Apps Script",
+    "n8n",
+    "GA4",
+    "GTM",
+    "Looker Studio",
+    "Clarity",
+    "Zapier",
+    "Google Apps Script",
   ],
   coaching: [
-    "職涯諮詢", "人才洞察", "1:1 Mentorship", "公開講座",
+    "Career Coaching",
+    "Talent Insight",
+    "1:1 Mentorship",
+    "Public Speaking",
   ],
 };
 
-export default function Home() {
+export default function HomeEn() {
   return (
     <div>
       {/* ── Hero ── */}
@@ -263,22 +281,21 @@ export default function Home() {
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.1] text-[color:var(--color-fg-strong)] mb-6">
               Full-stack Marketer.
               <br />
-              橫跨營運、產品、行銷。
+              Marketing × Operations × Product.
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-lg text-[color:var(--color-fg)] mb-4 leading-relaxed">
-              擁有橫跨
+              7 years spanning{" "}
               <span className="text-[color:var(--color-accent)] font-semibold">
-                行銷、營運、產品
+                marketing, operations, and product
               </span>
-              三個領域，從依照利潤、盈利可能性設定產品行銷策略、流量擴大執行、用戶體驗及轉換優化，能從多個面向結合 AI 及自動化應用，於策略、執行、技術三層同時做決策與落地。
+              —from profit-based product strategy and funnel growth to UX &amp; conversion optimization. I integrate AI and automation throughout, making decisions across strategy, execution, and technical layers simultaneously.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
             <p className="text-base text-[color:var(--color-muted)] mb-10">
-              目前尋找 Remote-first 的 B2B SaaS 與 AI 原生團隊資深行銷 / 營運 /
-              Supervisor 職位。
+              Currently seeking remote-first senior marketing / ops / supervisor roles at B2B SaaS and AI-native teams.
             </p>
           </FadeIn>
           <FadeIn delay={0.4}>
@@ -287,19 +304,19 @@ export default function Home() {
                 href="#projects"
                 className="inline-flex items-center px-5 py-2.5 bg-[color:var(--color-accent)] text-white text-sm font-medium hover:bg-[color:var(--color-accent-hover)] transition-colors"
               >
-                看專案 →
+                View Projects →
               </a>
               <a
-                href="/cv"
+                href="/en/cv"
                 className="inline-flex items-center px-5 py-2.5 border border-[color:var(--color-accent)] text-[color:var(--color-accent)] text-sm font-medium hover:bg-[color:var(--color-accent)] hover:text-white transition-colors"
               >
-                下載履歷 PDF
+                Download Resume PDF
               </a>
               <a
                 href="#contact"
                 className="inline-flex items-center px-5 py-2.5 border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] text-sm font-medium hover:border-[color:var(--color-accent)] transition-colors"
               >
-                聯繫
+                Contact
               </a>
             </div>
           </FadeIn>
@@ -313,41 +330,41 @@ export default function Home() {
       >
         <div className="container-narrow">
           <FadeIn>
-            <SectionTitle eyebrow="About" title="關於我" />
+            <SectionTitle eyebrow="About" title="About Me" />
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="space-y-4 text-[17px] text-[color:var(--color-fg)] leading-relaxed">
               <p>
-                7 年行銷資歷，從中小企業媒體投放、內容、SEO 基礎動手累積起家，近 4 年進入
+                7 years in marketing—starting hands-on with media buying, content, and SEO at SMBs, then evolving into{" "}
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
-                  Full-Stack Marketing 實戰
-                </span>
-                階段——在 3 間不同產業的公司同時處理策略、營運與技術實作。
+                  full-stack marketing
+                </span>{" "}
+                over the last 4 years—handling strategy, operations, and technical execution in parallel at 3 companies across different industries.
               </p>
               <p>
-                於
+                At{" "}
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
-                  職游
+                  Zhi You
                 </span>
-                為多產品線設計資源分配框架，將主資源投入高利潤 / 轉換率培訓班產品，推動 2025 年度培訓班最高報名人數，及逾 2 百萬元營收；於
+                , designed a resource allocation framework across multiple product lines, directing primary resources to high-margin / high-conversion training products—driving the highest training program enrollment of 2025 and over NT$2M in revenue. At{" "}
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
-                  商業思維學院
+                  Business Thinking Institute
                 </span>
-                主導平台關站及移轉專案，於 3 個月內完成規格釐清、系統前後端設計規劃，並推動 60% 的用戶完成移轉，並降低達數百萬元的退費風險；在
+                , led the platform sunset and migration project—completing spec clarification, front/back-end redesign, and driving 60% user migration within 3 months, reducing refund risk by several million NTD. At{" "}
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
-                  百瀚
+                  Bohan
                 </span>
-                協助數位轉型，設計 OMO 銷售與行銷自動化系統，以達全國各分校及線上端，從初次觸客到最後轉換的數據脈絡。
+                , led digital transformation, designing OMO sales and marketing automation systems to unify customer journey tracking from first-touch to conversion across all offline centers and online channels.
               </p>
               <p>
-                這些經驗讓我具備{" "}
+                These experiences gave me the complete{" "}
                 <span className="text-[color:var(--color-accent)] font-semibold">
                   full-stack marketing
                 </span>{" "}
-                的完整 know-how，懂策略、懂執行、也懂工程與 AI 工作流程，能將重複性工作寫成系統，讓整個團隊跑得更快。
+                know-how—strategy, execution, and engineering/AI workflows—so I can turn repetitive work into systems and help the whole team move faster.
               </p>
               <p>
-                教育業 B2C（高單價 × 長決策週期）與 B2B（企業內訓 × 顧問合約）訓練出的 retention、expansion、客戶成功肌肉，可直接 transfer 至 B2B SaaS 的 ARR 成長、upsell 與續約情境。
+                The retention, expansion, and customer-success muscles trained through education B2C (high-ticket × long decision cycles) and B2B (corporate training × advisory contracts) transfer directly to B2B SaaS scenarios—ARR growth, upsell, and renewal.
               </p>
             </div>
           </FadeIn>
@@ -363,8 +380,8 @@ export default function Home() {
           <FadeIn>
             <SectionTitle
               eyebrow="Work Experience"
-              title="工作經歷"
-
+              title="Experience"
+              description="Click any entry to expand the full context, scope, outcomes, and stack."
             />
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -382,7 +399,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-[color:var(--color-accent)] hover:gap-3 transition-all"
               >
-                在 LinkedIn 查看完整經歷
+                View full history on LinkedIn
                 <svg
                   width="14"
                   height="14"
@@ -402,7 +419,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* ── Coaching & Speaking (Leadership Signals) ── */}
+      {/* ── Coaching & Speaking ── */}
       <Section
         id="leadership"
         className="border-t border-[color:var(--color-subtle)] !py-16 sm:!py-20"
@@ -411,8 +428,8 @@ export default function Home() {
           <FadeIn>
             <SectionTitle
               eyebrow="Coaching & Speaking"
-              title="職涯諮詢 × 公開講座"
-              description="尚未擔任正式帶人職，但持續透過 1:1 諮詢、大專院校講座、跨部門協作引導累積管理者核心能力——利害關係人管理、組織結構分析、對上溝通。"
+              title="Career Coaching × Public Speaking"
+              description="Not yet holding a formal management title, but continuously building core management competencies through 1:1 coaching, university lectures, and cross-functional facilitation—stakeholder management, organizational analysis, upward communication."
             />
           </FadeIn>
           <div className="space-y-0">
@@ -451,23 +468,23 @@ export default function Home() {
       >
         <div className="container-narrow">
           <FadeIn>
-            <SectionTitle eyebrow="Education" title="學歷" />
+            <SectionTitle eyebrow="Education" title="Education" />
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="flex items-center gap-4">
               <BrandLogo
                 slug="ncku"
-                name="國立成功大學"
-                initials="成大"
+                name="National Cheng Kung University"
+                initials="NCKU"
                 size={44}
                 color="#7C2D12"
               />
               <div className="flex-1 flex flex-wrap items-baseline gap-x-4 gap-y-1">
                 <h3 className="font-serif text-xl text-[color:var(--color-fg-strong)]">
-                  國立成功大學
+                  National Cheng Kung University
                 </h3>
                 <div className="text-sm text-[color:var(--color-muted)]">
-                  經濟學系 · 2017 畢業
+                  B.A. in Economics · Class of 2017
                 </div>
               </div>
             </div>
@@ -482,9 +499,9 @@ export default function Home() {
       >
         <div className="container-narrow">
           <FadeIn>
-            <SectionTitle eyebrow="Skills" title="能力" />
+            <SectionTitle eyebrow="Skills" title="Skills" />
           </FadeIn>
-          <div className="space-y-6">
+          <div className="space-y-8">
             {(
               [
                 { label: "Marketing", items: skills.marketing },
@@ -494,8 +511,8 @@ export default function Home() {
               ] as const
             ).map((group, i) => (
               <FadeIn key={group.label} delay={i * 0.08}>
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
-                  <div className="text-xs uppercase tracking-wider text-[color:var(--color-accent)] font-mono sm:w-28 shrink-0 pt-1">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+                  <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono sm:w-28 shrink-0 pt-0.5">
                     {group.label}
                   </div>
                   <div className="text-[color:var(--color-fg)] leading-relaxed flex-1">
@@ -508,7 +525,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* ── Projects (main focus) ── */}
+      {/* ── Projects ── */}
       <Section
         id="projects"
         className="border-t border-[color:var(--color-subtle)] !py-16 sm:!py-20"
@@ -517,8 +534,8 @@ export default function Home() {
           <FadeIn>
             <SectionTitle
               eyebrow="Projects"
-              title="專案經歷"
-              description="三個代表性專案，點擊展開視覺化流程，呈現實際策略執行的思維脈絡。"
+              title="Selected Work"
+              description="Three representative projects. Click to expand the full case study and visualization."
             />
           </FadeIn>
           <div className="space-y-6">
@@ -552,7 +569,7 @@ export default function Home() {
               Let&apos;s connect
             </h2>
             <p className="text-base text-[color:var(--color-muted)] leading-relaxed mb-8">
-              正在尋找下一個能深耕的團隊。如果你的組織需要結合行銷策略與系統化執行的人，歡迎聯繫。
+              Looking for my next team to invest in long-term. If your org needs someone who combines marketing strategy with systematized execution, let&apos;s talk.
             </p>
           </FadeIn>
           <FadeIn delay={0.15}>
@@ -592,7 +609,7 @@ export default function Home() {
                 LinkedIn
               </a>
               <a
-                href="/cv"
+                href="/en/cv"
                 className="inline-flex items-center gap-2 px-5 py-2.5 border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] text-sm font-medium hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)] transition-colors"
               >
                 <svg
@@ -614,7 +631,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.25}>
             <p className="mt-8 text-sm text-[color:var(--color-muted)]">
-              通常 24 小時內回覆。
+              Typically reply within 24 hours.
             </p>
           </FadeIn>
         </div>

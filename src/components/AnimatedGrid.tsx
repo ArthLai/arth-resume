@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Square {
@@ -25,24 +25,23 @@ export function AnimatedGridPattern({
   rows?: number;
 }) {
   const patternId = useId();
-  const [squares, setSquares] = useState<Square[]>([]);
-  const [counter, setCounter] = useState(numSquares);
+  const [squares, setSquares] = useState<Square[]>(() =>
+    Array.from({ length: numSquares }, (_, i) => ({
+      key: i,
+      col: (i * 7) % cols,
+      row: (i * 3) % rows,
+    })),
+  );
+  const counterRef = useRef(numSquares);
 
   useEffect(() => {
-    const initial: Square[] = Array.from({ length: numSquares }, (_, i) => ({
-      key: i,
-      col: Math.floor(Math.random() * cols),
-      row: Math.floor(Math.random() * rows),
-    }));
-    setSquares(initial);
-
     const interval = setInterval(() => {
       setSquares((prev) => {
         const idx = Math.floor(Math.random() * prev.length);
         const next = [...prev];
-        setCounter((c) => c + 1);
+        counterRef.current += 1;
         next[idx] = {
-          key: counter + 1,
+          key: counterRef.current,
           col: Math.floor(Math.random() * cols),
           row: Math.floor(Math.random() * rows),
         };
@@ -51,7 +50,7 @@ export function AnimatedGridPattern({
     }, 800);
 
     return () => clearInterval(interval);
-  }, [numSquares, cols, rows, counter]);
+  }, [numSquares, cols, rows]);
 
   return (
     <svg
@@ -70,7 +69,7 @@ export function AnimatedGridPattern({
           <path
             d={`M ${cellSize} 0 L 0 0 0 ${cellSize}`}
             fill="none"
-            stroke="rgba(96, 165, 250, 0.04)"
+            stroke="rgba(var(--accent-rgb), 0.08)"
             strokeWidth="1"
           />
         </pattern>
@@ -84,7 +83,7 @@ export function AnimatedGridPattern({
             y={sq.row * cellSize + 1}
             width={cellSize - 1}
             height={cellSize - 1}
-            fill="rgba(96, 165, 250, 1)"
+            fill="rgba(var(--accent-rgb), 1)"
             initial={{ opacity: 0 }}
             animate={{ opacity: maxOpacity }}
             exit={{ opacity: 0 }}

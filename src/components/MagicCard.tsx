@@ -27,7 +27,7 @@ export function MagicCard({
       onMouseLeave={() => setHovered(false)}
       className={`relative overflow-hidden border border-[color:var(--color-subtle)] bg-[color:var(--color-card)] transition-[border-color] duration-300 ${className}`}
       style={{
-        borderColor: hovered ? "rgba(96, 165, 250, 0.25)" : undefined,
+        borderColor: hovered ? "rgba(var(--accent-rgb), 0.25)" : undefined,
       }}
     >
       {/* Spotlight */}
@@ -35,7 +35,7 @@ export function MagicCard({
         className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
         style={{
           opacity: hovered ? 1 : 0,
-          background: `radial-gradient(400px circle at ${pos.x}px ${pos.y}px, rgba(96, 165, 250, 0.08), transparent 60%)`,
+          background: `radial-gradient(400px circle at ${pos.x}px ${pos.y}px, rgba(var(--accent-rgb), 0.08), transparent 60%)`,
         }}
       />
       {/* Border glow */}
@@ -43,7 +43,7 @@ export function MagicCard({
         className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
         style={{
           opacity: hovered ? 1 : 0,
-          background: `radial-gradient(250px circle at ${pos.x}px ${pos.y}px, rgba(96, 165, 250, 0.12), transparent 50%)`,
+          background: `radial-gradient(250px circle at ${pos.x}px ${pos.y}px, rgba(var(--accent-rgb), 0.12), transparent 50%)`,
         }}
       />
       <div className="relative z-10">{children}</div>

@@ -4,6 +4,8 @@ import { CountUp } from "@/components/CountUp";
 import { ProjectTimeline } from "@/components/ProjectTimeline";
 import { ProjectMatrix } from "@/components/ProjectMatrix";
 import { ProjectFlows } from "@/components/ProjectFlows";
+import { MagicCard } from "@/components/MagicCard";
+import { AnimatedGridPattern } from "@/components/AnimatedGrid";
 
 const capabilities = [
   {
@@ -146,8 +148,14 @@ export default function Home() {
   return (
     <div>
       {/* ── Hero ── */}
-      <section className="pt-20 sm:pt-28 pb-16 sm:pb-24">
-        <div className="container-wide">
+      <section className="relative pt-20 sm:pt-28 pb-16 sm:pb-24 overflow-hidden">
+        <AnimatedGridPattern
+          className="absolute inset-0 w-full h-full opacity-60 [mask-image:radial-gradient(500px_circle_at_50%_50%,white,transparent)]"
+          numSquares={12}
+          maxOpacity={0.2}
+          cellSize={56}
+        />
+        <div className="container-wide relative z-10">
           <FadeIn>
             <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-accent)] font-mono mb-6">
               Marketing × Operations × Automation
@@ -209,8 +217,10 @@ export default function Home() {
           <StaggerGroup className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
             {capabilities.map((cap) => (
               <StaggerItem key={cap.title}>
-                <h3 className="text-lg font-medium text-[color:var(--color-fg)] mb-3">{cap.title}</h3>
-                <p className="text-[color:var(--color-muted)] leading-relaxed">{cap.body}</p>
+                <MagicCard className="p-5 h-full">
+                  <h3 className="text-lg font-medium text-[color:var(--color-fg)] mb-3">{cap.title}</h3>
+                  <p className="text-[color:var(--color-muted)] leading-relaxed">{cap.body}</p>
+                </MagicCard>
               </StaggerItem>
             ))}
           </StaggerGroup>
@@ -324,7 +334,7 @@ export default function Home() {
           <div className="space-y-12">
             {projects.map((p) => (
               <FadeIn key={p.number}>
-                <div className="border border-[color:var(--color-subtle)] bg-[color:var(--color-card)] p-6 sm:p-8">
+                <MagicCard className="p-6 sm:p-8">
                   <div className="flex flex-col sm:flex-row sm:items-baseline gap-4 sm:gap-8 mb-4">
                     <div className="font-mono text-sm text-[color:var(--color-accent)] sm:w-12">{p.number}</div>
                     <div className="flex-1">
@@ -340,7 +350,7 @@ export default function Home() {
                   {p.hasTimeline && <ProjectTimeline />}
                   {p.hasMatrix && <ProjectMatrix />}
                   {p.hasFlows && <ProjectFlows />}
-                </div>
+                </MagicCard>
               </FadeIn>
             ))}
           </div>

@@ -2,6 +2,8 @@ import { Section, SectionTitle } from "@/components/Section";
 import { FadeIn, StaggerGroup, StaggerItem } from "@/components/FadeIn";
 import { CountUp } from "@/components/CountUp";
 import { ProjectTimeline } from "@/components/ProjectTimeline";
+import { ProjectMatrix } from "@/components/ProjectMatrix";
+import { ProjectFlows } from "@/components/ProjectFlows";
 
 const capabilities = [
   {
@@ -29,6 +31,8 @@ const projects = [
     desc: "主導線上教育平台端到端關站專案——釐清產品業務與技術邏輯、評估 User Flow 及 UIUX、設定營運驅動策略，3 個月內達成近 60% 用戶移轉。",
     tags: ["營運", "跨職能領導", "UX", "用戶移轉"],
     hasTimeline: true,
+    hasMatrix: false,
+    hasFlows: false,
   },
   {
     number: "02",
@@ -36,6 +40,8 @@ const projects = [
     desc: "於電商與服務多產品線環境中，依毛利、市場規模、產品成熟度、可行性設計評估框架，將策略轉化為具體的預算與執行資源調配。",
     tags: ["行銷策略", "資源分配", "決策框架"],
     hasTimeline: false,
+    hasMatrix: true,
+    hasFlows: false,
   },
   {
     number: "03",
@@ -43,6 +49,8 @@ const projects = [
     desc: "透過 n8n、Google Apps Script、API 串接，建置橫跨銷售交接、顧客旅程、事件追蹤的自動化系統，減少人工作業、提升數據準確度與營運效率。",
     tags: ["自動化", "漏斗工程", "追蹤架構"],
     hasTimeline: false,
+    hasMatrix: false,
+    hasFlows: true,
   },
 ];
 
@@ -330,6 +338,8 @@ export default function Home() {
                     </div>
                   </div>
                   {p.hasTimeline && <ProjectTimeline />}
+                  {p.hasMatrix && <ProjectMatrix />}
+                  {p.hasFlows && <ProjectFlows />}
                 </div>
               </FadeIn>
             ))}

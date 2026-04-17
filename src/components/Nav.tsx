@@ -15,7 +15,7 @@ export function Nav() {
         >
           Arth Lai
         </a>
-        <nav className="flex items-center gap-6 text-sm">
+        <nav className="flex items-center gap-7 text-base">
           {links.map((link) => (
             <a
               key={link.href}

@@ -62,7 +62,7 @@ const experiences = [
     title: "Marketing Specialist",
     period: "2024.07 – 2026.03",
     teamSize: "自由職業 · 遠距",
-    context: "新創型職涯顧問公司，負責橫跨電商、行銷、數據分析、CRM 與自動化的成長營運。",
+    context: "新創型職涯顧問公司，以顧問身份主導電商、行銷、數據分析與自動化的成長營運。選擇自由職業以同步建立跨產業實戰經驗與個人專業品牌，目前尋求正職以深耕單一組織的長期價值。",
     owned: [
       "多產品線資源分配與行銷策略制定",
       "全漏斗追蹤系統建置（GA4、GTM、Dashboard）",
@@ -70,8 +70,8 @@ const experiences = [
       "跨產品線行銷執行與成效優化",
     ],
     metrics: [
-      { value: "多產品線", label: "資源分配框架建立" },
-      { value: "端到端", label: "自動化系統取代手動流程" },
+      { value: "多產品線", label: "資源分配框架建立 [具體數據待補]" },
+      { value: "端到端", label: "自動化系統取代手動流程 [具體數據待補]" },
     ],
     stack: ["GA4", "GTM", "n8n", "Apps Script", "Looker Studio", "Clarity"],
   },
@@ -80,9 +80,9 @@ const experiences = [
     title: "Marketing Operations Specialist",
     period: "2023.09 – 2024.07",
     teamSize: "正職 · 遠距",
-    context: "線上商業教育平台，服務數萬名會員的訂閱制學習社群。",
+    context: "線上商業教育平台，服務數萬名會員的訂閱制學習社群。跨團隊協調產品、技術、營運等部門推動關鍵專案。",
     owned: [
-      "主導平台關站與用戶移轉專案",
+      "主導平台關站與用戶移轉專案，跨部門協調",
       "線上課程行銷活動（受眾鎖定、渠道規劃、排程）",
       "行銷數據追蹤與 CRM 管理",
     ],
@@ -116,34 +116,40 @@ const experiences = [
 const skillClusters = [
   {
     name: "行銷 Marketing",
+    tier: "core",
     skills: ["策略與定位", "資源分配框架", "Performance Marketing", "Lifecycle & CRM", "SEO 與內容", "行銷分析", "A/B 測試", "漏斗優化"],
-    validatedBy: ["職游", "商業思維學院"],
+    validatedBy: ["職游", "商業思維學院", "百瀚"],
   },
   {
     name: "營運 Operations",
-    skills: ["跨職能領導", "專案移轉", "流程設計", "利害關係人管理", "危機營運"],
+    tier: "core",
+    skills: ["跨職能領導", "專案移轉", "流程設計", "利害關係人管理"],
     validatedBy: ["商業思維學院關站移轉"],
   },
   {
-    name: "技術與自動化 Tech & Automation",
-    skills: ["n8n", "Zapier", "GA4", "GTM", "Looker Studio", "Clarity", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "OpenAI / Claude APIs", "RAG"],
+    name: "自動化工具 Automation Tools",
+    tier: "core",
+    skills: ["n8n", "GA4", "GTM", "Looker Studio", "Clarity", "Zapier", "Google Apps Script"],
     validatedBy: ["職游自動化系統", "全漏斗追蹤建置"],
   },
   {
-    name: "人才與諮詢 People & Coaching",
-    skills: ["職涯諮詢", "人才洞察", "1:1 mentorship", "對上溝通", "公開講座"],
-    validatedBy: ["職涯諮詢實務", "大學講座系列"],
+    name: "工程技術 Engineering",
+    tier: "extended",
+    skills: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "OpenAI / Claude APIs", "RAG"],
+    validatedBy: ["個人專案", "自動化系統自建"],
   },
   {
-    name: "思維 Mindset",
-    skills: ["系統思考", "跨域整合", "框架建構", "策略溝通", "Operator 心態"],
-    validatedBy: [],
+    name: "人才與諮詢 People & Coaching",
+    tier: "extended",
+    skills: ["職涯諮詢", "人才洞察", "1:1 mentorship", "公開講座"],
+    validatedBy: ["職涯諮詢實務", "大學講座系列"],
   },
 ];
 
 const channels = [
   { label: "Email", value: "bo.heng.lai@gmail.com", href: "mailto:bo.heng.lai@gmail.com" },
   { label: "LinkedIn", value: "linkedin.com/in/arth-lai-09882b136", href: "https://www.linkedin.com/in/arth-lai-09882b136/?skipRedirect=true" },
+  { label: "履歷 PDF", value: "下載完整履歷", href: "#" },
 ];
 
 export default function Home() {
@@ -170,15 +176,23 @@ export default function Home() {
               將策略轉化為可交付的系統
             </h1>
           </FadeIn>
-          <FadeIn delay={0.25}>
-            <p className="text-lg text-[color:var(--color-muted)] max-w-2xl mb-12 leading-relaxed">
+          <FadeIn delay={0.2}>
+            <p className="text-lg text-[color:var(--color-muted)] max-w-2xl mb-5 leading-relaxed">
+              擅長結合行銷策略、營運架構與自動化工具，把複雜的商業問題拆解成可落地、可規模化的系統。
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <p className="text-base text-[color:var(--color-muted)] max-w-2xl mb-12">
               目前尋找 Remote-first 的 B2B 與 AI 原生團隊資深行銷 / 營運 / Supervisor 職位。
             </p>
           </FadeIn>
-          <FadeIn delay={0.35}>
-            <div className="flex gap-4">
+          <FadeIn delay={0.4}>
+            <div className="flex flex-wrap gap-4">
               <a href="#projects" className="inline-flex items-center px-6 py-3 bg-[color:var(--color-accent)] text-[color:var(--color-bg)] text-base font-medium hover:bg-[color:var(--color-accent-hover)] transition-colors">
                 查看專案 →
+              </a>
+              <a href="#" className="inline-flex items-center px-6 py-3 border border-[color:var(--color-accent)] text-[color:var(--color-accent)] text-base font-medium hover:bg-[color:var(--color-accent)] hover:text-[color:var(--color-bg)] transition-colors">
+                下載履歷 PDF
               </a>
               <a href="#contact" className="inline-flex items-center px-6 py-3 border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] text-base font-medium hover:border-[color:var(--color-accent)] transition-colors">
                 聯繫
@@ -191,20 +205,30 @@ export default function Home() {
       {/* ── Quick Snapshot ── */}
       <Section className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide">
-          <StaggerGroup className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+          <StaggerGroup className="grid grid-cols-1 sm:grid-cols-4 gap-10">
             <StaggerItem>
               <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">
                 <CountUp target={4} suffix="+" />
               </div>
-              <div className="text-base text-[color:var(--color-muted)]">年橫跨行銷 × 營運 × 技術經驗</div>
+              <div className="text-base text-[color:var(--color-muted)]">年行銷 × 營運經驗</div>
             </StaggerItem>
             <StaggerItem>
-              <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">AI</div>
-              <div className="text-base text-[color:var(--color-muted)]">原生執行 · 透過自動化建構與交付</div>
+              <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">
+                <CountUp target={3} />
+              </div>
+              <div className="text-base text-[color:var(--color-muted)]">間公司跨產業實戰</div>
             </StaggerItem>
             <StaggerItem>
-              <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">Cross</div>
-              <div className="text-base text-[color:var(--color-muted)]">跨職能主導 · 從策略到移轉的多領域專案</div>
+              <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">
+                60<span className="text-[color:var(--color-accent)]">x</span>
+              </div>
+              <div className="text-base text-[color:var(--color-muted)]">最佳 SEO 流量成長</div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-3">
+                <CountUp target={60} suffix="%" />
+              </div>
+              <div className="text-base text-[color:var(--color-muted)]">用戶移轉達成 / 3 個月</div>
             </StaggerItem>
           </StaggerGroup>
         </div>
@@ -239,17 +263,13 @@ export default function Home() {
             {experiences.map((exp, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <article className="border-t border-[color:var(--color-subtle)] pt-12">
-                  {/* Header */}
                   <header className="mb-8">
                     <h3 className="font-serif text-3xl text-[color:var(--color-fg)] mb-3">{exp.company}</h3>
                     <div className="flex flex-wrap gap-x-4 gap-y-1 text-base text-[color:var(--color-muted)]">
                       <span>{exp.title}</span><span>·</span><span>{exp.period}</span><span>·</span><span>{exp.teamSize}</span>
                     </div>
                   </header>
-
-                  {/* Two-column layout */}
                   <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10">
-                    {/* Left: context + responsibilities + tools */}
                     <div className="space-y-6">
                       <div>
                         <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-3">情境</div>
@@ -274,13 +294,9 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-
-                    {/* Right: metrics card */}
                     <div className="lg:pt-0">
                       <MagicCard className="p-6">
-                        <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-5">
-                          Key Results
-                        </div>
+                        <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-5">Key Results</div>
                         <div className="space-y-5">
                           {exp.metrics.map((m, idx) => (
                             <div key={idx} className="border-b border-[color:var(--color-subtle)] pb-5 last:border-0 last:pb-0">
@@ -296,51 +312,22 @@ export default function Home() {
               </FadeIn>
             ))}
 
-            {/* Career Coaching */}
+            {/* Career Coaching — compact */}
             <FadeIn>
               <article className="border-t border-[color:var(--color-subtle)] pt-12">
-                <header className="mb-8">
-                  <h3 className="font-serif text-3xl text-[color:var(--color-fg)] mb-3">職涯諮詢（並行）</h3>
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-base text-[color:var(--color-muted)]">
-                    <span>諮詢師 / 講師</span><span>·</span><span>2024 – 至今</span>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-4">
+                  <h3 className="font-serif text-2xl text-[color:var(--color-fg)]">職涯諮詢（並行）</h3>
+                  <div className="text-base text-[color:var(--color-muted)]">
+                    諮詢師 / 講師 · 2024 – 至今
                   </div>
-                </header>
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10">
-                  <div className="space-y-6">
-                    <div>
-                      <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-3">情境</div>
-                      <p className="text-[color:var(--color-fg)] leading-relaxed">為早期職涯與轉職者提供 1:1 諮詢，並受邀至大專院校進行職涯講座。</p>
-                    </div>
-                    <div>
-                      <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-3">專注領域</div>
-                      <ul className="space-y-3">
-                        {["早期職涯規劃與職位選擇", "轉職策略與職涯轉換", "對上溝通與組織內定位", "個人專業形象建立"].map((item, idx) => (
-                          <li key={idx} className="text-[color:var(--color-fg)] leading-relaxed pl-6 relative">
-                            <span className="absolute left-0 top-[0.65em] w-3 h-px bg-[color:var(--color-accent)]" />{item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <MagicCard className="p-6">
-                      <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono mb-5">
-                        代表性合作
-                      </div>
-                      <div className="space-y-4">
-                        <div className="border-b border-[color:var(--color-subtle)] pb-4">
-                          <div className="text-[color:var(--color-fg)] font-medium mb-1">國立台中科技大學</div>
-                          <div className="text-sm text-[color:var(--color-muted)]">2026.04 · 職涯講座</div>
-                          <div className="text-sm text-[color:var(--color-muted)] mt-1">從校園到職場 — 大學生一定要知道的職涯真相</div>
-                        </div>
-                        <div>
-                          <div className="text-sm text-[color:var(--color-muted)] leading-relaxed">
-                            諮詢工作訓練我讀懂動機、系統、限制——這正是推動跨職能對齊與團隊績效所需的能力。
-                          </div>
-                        </div>
-                      </div>
-                    </MagicCard>
-                  </div>
+                </div>
+                <p className="text-[color:var(--color-muted)] leading-relaxed max-w-3xl mb-4">
+                  為早期職涯與轉職者提供 1:1 諮詢。受邀至國立台中科技大學進行職涯講座（2026.04）。諮詢工作訓練我讀懂動機、系統、限制——這正是推動跨職能對齊與團隊績效所需的能力。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["職涯規劃", "轉職策略", "對上溝通", "專業形象建立"].map((s) => (
+                    <span key={s} className="text-sm px-2.5 py-1 bg-[color:var(--color-subtle)] text-[color:var(--color-muted)]">{s}</span>
+                  ))}
                 </div>
               </article>
             </FadeIn>
@@ -384,13 +371,18 @@ export default function Home() {
       <Section id="skills" className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide">
           <FadeIn>
-            <SectionTitle eyebrow="Skills" title="能力地圖" description="按領域分群，連結到驗證它們的實際專案。" />
+            <SectionTitle eyebrow="Skills" title="能力地圖" description="核心日常使用技能與延伸工程能力。" />
           </FadeIn>
           <div className="space-y-14">
             {skillClusters.map((c, i) => (
               <FadeIn key={c.name} delay={i * 0.05}>
-                <section className="border-t border-[color:var(--color-subtle)] pt-10">
-                  <h3 className="font-serif text-3xl text-[color:var(--color-fg)] mb-6">{c.name}</h3>
+                <section className={`pt-10 ${c.tier === "core" ? "border-t border-[color:var(--color-subtle)]" : "border-t border-dashed border-[color:var(--color-subtle)]"}`}>
+                  <div className="flex items-baseline gap-3 mb-6">
+                    <h3 className="font-serif text-3xl text-[color:var(--color-fg)]">{c.name}</h3>
+                    {c.tier === "extended" && (
+                      <span className="text-xs px-2 py-0.5 border border-[color:var(--color-subtle)] text-[color:var(--color-muted)] font-mono uppercase">Extended</span>
+                    )}
+                  </div>
                   <StaggerGroup className="flex flex-wrap gap-2.5 mb-6" stagger={0.03}>
                     {c.skills.map((s) => (
                       <StaggerItem key={s}>
@@ -408,6 +400,21 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
+        </div>
+      </Section>
+
+      {/* ── Education ── */}
+      <Section className="border-t border-[color:var(--color-subtle)]">
+        <div className="container-wide">
+          <FadeIn>
+            <SectionTitle eyebrow="Education" title="學歷" />
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+              <h3 className="font-serif text-2xl text-[color:var(--color-fg)]">[學校名稱 TBD]</h3>
+              <div className="text-base text-[color:var(--color-muted)]">[科系 TBD] · [畢業年 TBD]</div>
+            </div>
+          </FadeIn>
         </div>
       </Section>
 

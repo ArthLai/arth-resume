@@ -107,44 +107,21 @@ const experiences = [
   },
 ];
 
-const skillClusters = [
-  {
-    name: "行銷 Marketing",
-    tier: "core" as const,
-    skills: ["策略與定位", "資源分配框架", "Performance Marketing", "Lifecycle & CRM", "SEO 與內容", "行銷分析", "A/B 測試", "漏斗優化"],
-    validatedBy: ["職游", "商業思維學院", "百瀚"],
-  },
-  {
-    name: "營運 Operations",
-    tier: "core" as const,
-    skills: ["跨職能領導", "專案移轉", "流程設計", "利害關係人管理"],
-    validatedBy: ["商業思維學院關站移轉"],
-  },
-  {
-    name: "自動化工具 Automation Tools",
-    tier: "core" as const,
-    skills: ["n8n", "GA4", "GTM", "Looker Studio", "Clarity", "Zapier", "Google Apps Script"],
-    validatedBy: ["職游自動化系統", "全漏斗追蹤建置"],
-  },
-  {
-    name: "工程技術 Engineering",
-    tier: "extended" as const,
-    skills: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Redis", "BullMQ", "OpenAI / Claude APIs", "RAG"],
-    validatedBy: ["個人專案", "自動化系統自建"],
-  },
-  {
-    name: "人才與諮詢 People & Coaching",
-    tier: "extended" as const,
-    skills: ["職涯諮詢", "人才洞察", "1:1 mentorship", "公開講座"],
-    validatedBy: ["職涯諮詢實務", "大學講座系列"],
-  },
-];
-
-const channels = [
-  { label: "Email", value: "bo.heng.lai@gmail.com", href: "mailto:bo.heng.lai@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/arth-lai-09882b136", href: "https://www.linkedin.com/in/arth-lai-09882b136/?skipRedirect=true" },
-  { label: "履歷 PDF", value: "下載完整履歷", href: "#" },
-];
+const skills = {
+  marketing: [
+    "策略與定位", "資源分配框架", "Performance Marketing",
+    "Lifecycle & CRM", "SEO 與內容", "行銷分析", "A/B 測試", "漏斗優化",
+  ],
+  operations: [
+    "跨職能領導", "專案移轉", "流程設計", "利害關係人管理",
+  ],
+  tools: [
+    "n8n", "GA4", "GTM", "Looker Studio", "Clarity", "Zapier", "Google Apps Script",
+  ],
+  coaching: [
+    "職涯諮詢", "人才洞察", "1:1 Mentorship", "公開講座",
+  ],
+};
 
 export default function Home() {
   return (
@@ -411,32 +388,24 @@ export default function Home() {
       <Section id="skills" className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide">
           <FadeIn>
-            <SectionTitle eyebrow="Skills" title="能力地圖" description="核心日常使用技能與延伸工程能力。" />
+            <SectionTitle eyebrow="Skills" title="能力" />
           </FadeIn>
-          <div className="space-y-14">
-            {skillClusters.map((c, i) => (
-              <FadeIn key={c.name} delay={i * 0.05}>
-                <section className={`pt-10 ${c.tier === "core" ? "border-t border-[color:var(--color-subtle)]" : "border-t border-dashed border-[color:var(--color-subtle)]"}`}>
-                  <div className="flex items-baseline gap-3 mb-6">
-                    <h3 className="font-serif text-3xl text-[color:var(--color-fg-strong)]">{c.name}</h3>
-                    {c.tier === "extended" && (
-                      <span className="text-xs px-2 py-0.5 border border-[color:var(--color-subtle)] text-[color:var(--color-muted)] font-mono uppercase">Extended</span>
-                    )}
+          <div className="space-y-10">
+            {([
+              { label: "Marketing", items: skills.marketing },
+              { label: "Operations", items: skills.operations },
+              { label: "Tools", items: skills.tools },
+              { label: "Coaching", items: skills.coaching },
+            ] as const).map((group, i) => (
+              <FadeIn key={group.label} delay={i * 0.08}>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+                  <div className="text-sm uppercase tracking-wider text-[color:var(--color-accent)] font-mono sm:w-28 shrink-0 pt-0.5">
+                    {group.label}
                   </div>
-                  <StaggerGroup className="flex flex-wrap gap-2.5 mb-6" stagger={0.03}>
-                    {c.skills.map((s) => (
-                      <StaggerItem key={s}>
-                        <span className="text-base px-3.5 py-2 bg-[color:var(--color-card)] border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] inline-block">{s}</span>
-                      </StaggerItem>
-                    ))}
-                  </StaggerGroup>
-                  {c.validatedBy.length > 0 && (
-                    <div className="text-sm text-[color:var(--color-muted)]">
-                      <span className="font-mono text-sm uppercase tracking-wider text-[color:var(--color-accent)] mr-3">Validated by</span>
-                      {c.validatedBy.join(" · ")}
-                    </div>
-                  )}
-                </section>
+                  <div className="text-[color:var(--color-fg)] leading-relaxed">
+                    {group.items.join(" · ")}
+                  </div>
+                </div>
               </FadeIn>
             ))}
           </div>
@@ -484,33 +453,42 @@ export default function Home() {
       <Section id="contact" className="border-t border-[color:var(--color-subtle)]">
         <div className="container-wide max-w-2xl">
           <FadeIn>
-            <SectionTitle
-              eyebrow="Get in Touch"
-              title="聯繫"
-              description="尋找中職位：資深 行銷 / 營運 / Supervisor 職位 · Remote-first · B2B SaaS 或 AI 原生產品。"
-            />
+            <h2 className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg-strong)] mb-6">
+              Let&apos;s connect
+            </h2>
+            <p className="text-lg text-[color:var(--color-muted)] leading-relaxed mb-10">
+              正在尋找下一個能深耕的團隊。如果你的組織需要結合行銷策略與系統化執行的人，歡迎聯繫。
+            </p>
           </FadeIn>
-          <FadeIn delay={0.1}>
-            <div className="space-y-px bg-[color:var(--color-subtle)] border-y border-[color:var(--color-subtle)]">
-              {channels.map((c) => (
-                <a
-                  key={c.label}
-                  href={c.href}
-                  target={c.href.startsWith("http") ? "_blank" : undefined}
-                  rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="flex items-baseline justify-between bg-[color:var(--color-bg)] py-6 -mx-6 px-6 group hover:bg-[color:var(--color-card)] transition-colors"
-                >
-                  <div className="flex items-baseline gap-6">
-                    <div className="font-mono text-sm uppercase tracking-wider text-[color:var(--color-accent)] w-24">{c.label}</div>
-                    <div className="text-lg text-[color:var(--color-fg)] group-hover:text-[color:var(--color-accent)] transition-colors">{c.value}</div>
-                  </div>
-                  <div className="text-[color:var(--color-muted)] group-hover:text-[color:var(--color-accent)] transition-colors text-lg">→</div>
-                </a>
-              ))}
+          <FadeIn delay={0.15}>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="mailto:bo.heng.lai@gmail.com"
+                className="inline-flex items-center gap-2.5 px-6 py-3 bg-[color:var(--color-accent)] text-[color:var(--color-bg)] text-base font-medium hover:bg-[color:var(--color-accent-hover)] transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/arth-lai-09882b136/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-6 py-3 border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] text-base font-medium hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)] transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+                LinkedIn
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2.5 px-6 py-3 border border-[color:var(--color-subtle)] text-[color:var(--color-fg)] text-base font-medium hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)] transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                Resume PDF
+              </a>
             </div>
           </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="mt-12 text-sm text-[color:var(--color-muted)]">獵頭合作：24 小時內回覆。</p>
+          <FadeIn delay={0.25}>
+            <p className="mt-10 text-sm text-[color:var(--color-muted)]">通常 24 小時內回覆。</p>
           </FadeIn>
         </div>
       </Section>

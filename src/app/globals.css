@@ -13,7 +13,11 @@
   --font-serif: var(--font-serif), ui-serif, Georgia, serif;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-fg);

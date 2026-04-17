@@ -12,19 +12,10 @@ const channels = [
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/[TBD]",
-    href: "https://www.linkedin.com/",
+    value: "linkedin.com/in/arth-lai-09882b136",
+    href: "https://www.linkedin.com/in/arth-lai-09882b136/?skipRedirect=true",
   },
-  {
-    label: "履歷 PDF",
-    value: "下載完整履歷",
-    href: "#",
-  },
-  {
-    label: "顧問業務",
-    value: "arthlai.com",
-    href: "https://arthlai.com",
-  },
+
 ];
 
 export default function ContactPage() {
@@ -33,7 +24,7 @@ export default function ContactPage() {
       <SectionTitle
         eyebrow="Get in Touch"
         title="聯繫"
-        description="最適合的合作：資深 行銷 / 營運 / Supervisor 職位 · Remote-first · B2B SaaS 或 AI 原生產品。"
+        description="尋找中職位：資深 行銷 / 營運 / Supervisor 職位 · Remote-first · B2B SaaS 或 AI 原生產品。"
       />
 
       <div className="space-y-px bg-[color:var(--color-subtle)] border-y border-[color:var(--color-subtle)]">

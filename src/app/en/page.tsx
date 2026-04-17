@@ -280,8 +280,9 @@ export default function HomeEn() {
           <FadeIn delay={0.1}>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.1] text-[color:var(--color-fg-strong)] mb-6">
               Full-stack Marketer.
-              <br />
-              Marketing × Operations × Product.
+              <span className="block mt-2 text-2xl sm:text-3xl md:text-4xl font-medium text-[color:var(--color-fg)]">
+                Marketing × Operations × Product.
+              </span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>

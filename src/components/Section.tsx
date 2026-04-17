@@ -24,13 +24,13 @@ export function SectionTitle({
   description?: string;
 }) {
   return (
-    <div className="mb-14">
+    <div className="mb-16">
       {eyebrow && (
         <div className="text-sm uppercase tracking-[0.2em] text-[color:var(--color-accent)] font-mono mb-4">
           {eyebrow}
         </div>
       )}
-      <h2 className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg)] mb-4">
+      <h2 className="font-serif text-4xl sm:text-5xl text-[color:var(--color-fg-strong)] mb-5">
         {title}
       </h2>
       {description && (

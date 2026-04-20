@@ -287,7 +287,7 @@ export default function HomeEn() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-lg text-[color:var(--color-fg)] mb-4 leading-relaxed">
-              7 years spanning{" "}
+              6 years spanning{" "}
               <span className="text-[color:var(--color-accent)] font-semibold">
                 marketing, operations, and product
               </span>
@@ -336,7 +336,7 @@ export default function HomeEn() {
           <FadeIn delay={0.1}>
             <div className="space-y-4 text-[17px] text-[color:var(--color-fg)] leading-relaxed">
               <p>
-                7 years in marketing—starting hands-on with media buying, content, and SEO at SMBs, then evolving into{" "}
+                6 years in marketing—starting hands-on with media buying, content, and SEO at SMBs, then evolving into{" "}
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
                   full-stack marketing
                 </span>{" "}

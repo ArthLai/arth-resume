@@ -319,7 +319,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div className="space-y-4 text-[17px] text-[color:var(--color-fg)] leading-relaxed">
               <p>
-                7 年行銷資歷，從中小企業媒體投放、內容、SEO 基礎動手累積起家，近 4 年進入
+                6 年行銷資歷，從中小企業媒體投放、內容、SEO 基礎動手累積起家，近 4 年進入
                 <span className="text-[color:var(--color-fg-strong)] font-semibold">
                   Full-Stack Marketing 實戰
                 </span>

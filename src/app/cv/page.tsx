@@ -60,7 +60,7 @@ export default function CV() {
         <section className="cv-section">
           <h2>Summary</h2>
           <p>
-            7 年行銷資歷，近 4 年進入 Full-Stack Marketing 實戰階段，橫跨行銷策略、營運執行與技術實作。於職游、商業思維學院、百瀚累積多產品線資源分配、平台關站移轉、OMO 數位轉型等實戰經驗。能在策略、執行、技術三層同時做決策與落地，並善用 AI 與自動化工具把重複性工作轉成系統。
+            6 年行銷資歷，近 4 年進入 Full-Stack Marketing 實戰階段，橫跨行銷策略、營運執行與技術實作。於職游、商業思維學院、百瀚累積多產品線資源分配、平台關站移轉、OMO 數位轉型等實戰經驗。能在策略、執行、技術三層同時做決策與落地，並善用 AI 與自動化工具把重複性工作轉成系統。
           </p>
           <p className="cv-looking">
             目前尋找 Remote-first 的資深行銷 / 營運 / Supervisor 職位。

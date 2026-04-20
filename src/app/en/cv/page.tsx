@@ -64,7 +64,7 @@ export default function CVEn() {
         <section className="cv-section">
           <h2>Summary</h2>
           <p>
-            7 years in marketing, with the last 4 years in a full-stack marketing phase—combining marketing strategy, operations execution, and technical implementation. Across Zhi You, Business Thinking Institute, and Bohan, I accumulated hands-on experience in multi-product resource allocation, platform sunset migration, and OMO digital transformation. I make decisions across strategy, execution, and technical layers simultaneously, and use AI + automation tools to turn repetitive work into systems.
+            6 years in marketing, with the last 4 years in a full-stack marketing phase—combining marketing strategy, operations execution, and technical implementation. Across Zhi You, Business Thinking Institute, and Bohan, I accumulated hands-on experience in multi-product resource allocation, platform sunset migration, and OMO digital transformation. I make decisions across strategy, execution, and technical layers simultaneously, and use AI + automation tools to turn repetitive work into systems.
           </p>
           <p className="cv-looking">
             Currently seeking remote-first senior marketing / operations / supervisor roles.
